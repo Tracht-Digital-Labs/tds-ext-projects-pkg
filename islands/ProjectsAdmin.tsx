@@ -108,7 +108,7 @@ export default function ProjectsAdmin() {
       else toast.danger(`Löschen fehlgeschlagen (HTTP ${r.status}).`);
     } catch {
       setPendingDelete(null);
-      toast.danger("Löschen fehlgeschlagen — die API ist nicht erreichbar.");
+      toast.danger("Löschen fehlgeschlagen, die API ist nicht erreichbar.");
     } finally {
       setDeleting(false);
     }
@@ -128,7 +128,7 @@ export default function ProjectsAdmin() {
         toast.danger(`Meilenstein konnte nicht angelegt werden (HTTP ${r.status}).`);
       }
     } catch {
-      toast.danger("Meilenstein konnte nicht angelegt werden — die API ist nicht erreichbar.");
+      toast.danger("Meilenstein konnte nicht angelegt werden, die API ist nicht erreichbar.");
     } finally {
       await load();
     }
@@ -142,7 +142,7 @@ export default function ProjectsAdmin() {
       // reload, so a toast would only repeat what the user can already see.
       if (!r.ok) toast.danger(`Status konnte nicht geändert werden (HTTP ${r.status}).`);
     } catch {
-      toast.danger("Status konnte nicht geändert werden — die API ist nicht erreichbar.");
+      toast.danger("Status konnte nicht geändert werden, die API ist nicht erreichbar.");
     } finally {
       await load();
     }
@@ -162,7 +162,7 @@ export default function ProjectsAdmin() {
       else toast.danger(`Löschen fehlgeschlagen (HTTP ${r.status}).`);
     } catch {
       setPendingMilestone(null);
-      toast.danger("Löschen fehlgeschlagen — die API ist nicht erreichbar.");
+      toast.danger("Löschen fehlgeschlagen, die API ist nicht erreichbar.");
     } finally {
       setDeleting(false);
     }

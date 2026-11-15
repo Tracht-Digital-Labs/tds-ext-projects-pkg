@@ -46,7 +46,7 @@ return [
         'tag' => 'Portal',
         'summary' => 'Projekte der aktiven Firma',
         'description' => 'Ohne aktive Firma (`X-Act-As-Customer`) eine leere Liste, kein '
-            . 'Fehler — das ist der normale Zustand eines Admins ohne Firmenauswahl.',
+            . 'Fehler, das ist der normale Zustand eines Admins ohne Firmenauswahl.',
         'permission' => 'projects:read',
         'responses' => [
             ['status' => 200, 'description' => '`{projects: [{id, title, status, start_date, target_date, …}]}`'],
@@ -106,7 +106,7 @@ return [
         'pattern' => '/admin/projects/{id:[0-9]+}',
         'tag' => 'Verwaltung',
         'summary' => 'Projekt ändern',
-        'description' => 'Schreibt alle Felder — nicht gesendete werden geleert, nicht '
+        'description' => 'Schreibt alle Felder, nicht gesendete werden geleert, nicht '
             . 'beibehalten. Die Firmenzuordnung bleibt unverändert.',
         'auth' => 'admin',
         'params' => array_merge(
