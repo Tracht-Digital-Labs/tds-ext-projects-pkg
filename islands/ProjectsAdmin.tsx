@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { Alert, ConfirmDialog, Spinner, StatusChip, toast } from "@tracht-digital-solutions/tds-shared/components";
-import { apiFetch, sendJson } from "@tracht-digital-solutions/tds-shared/api";
-import { resolveChipVariant } from "@tracht-digital-solutions/tds-shared/design";
+import { Alert, ConfirmDialog, Spinner, StatusChip, toast } from "@tracht-digital-labs/tds-shared/components";
+import { apiFetch, sendJson } from "@tracht-digital-labs/tds-shared/api";
+import { resolveChipVariant } from "@tracht-digital-labs/tds-shared/design";
 import { MILESTONE_STATUS, PROJECT_STATUS } from "./statuses";
 import {
   AnimatedItem,
   AnimatedList,
   Presence,
-} from "@tracht-digital-solutions/tds-shared/motion/react";
+} from "@tracht-digital-labs/tds-shared/motion/react";
 
 interface Milestone {
   id: number;

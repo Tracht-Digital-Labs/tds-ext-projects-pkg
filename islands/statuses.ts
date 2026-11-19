@@ -1,4 +1,4 @@
-import type { StatusStyle } from "@tracht-digital-solutions/tds-shared/components";
+import type { StatusStyle } from "@tracht-digital-labs/tds-shared/components";
 
 /**
  * Project and milestone statuses: label + chip tone. One map for both islands

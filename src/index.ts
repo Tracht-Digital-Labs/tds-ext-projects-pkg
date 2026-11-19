@@ -1,4 +1,4 @@
-import { defineExtension } from "@tracht-digital-solutions/tds-frontend-contract";
+import { defineExtension } from "@tracht-digital-labs/tds-frontend-contract";
 
 /**
  * Projects extension — the customer project + milestone directory, ported from
@@ -44,7 +44,7 @@ export default defineExtension({
     {
       id: "projects-active",
       title: "Aktive Projekte",
-      island: "@tracht-digital-solutions/tds-ext-projects/widgets/Widget.astro",
+      island: "@tracht-digital-labs/tds-ext-projects/widgets/Widget.astro",
       size: "sm",
       permission: "projects:read",
       dataEndpoint: "/projects/summary",
@@ -54,12 +54,12 @@ export default defineExtension({
   routes: [
     {
       pattern: "/projects",
-      entrypoint: "@tracht-digital-solutions/tds-ext-projects/pages/Index.astro",
+      entrypoint: "@tracht-digital-labs/tds-ext-projects/pages/Index.astro",
       permission: "projects:read",
     },
     {
       pattern: "/admin/projects",
-      entrypoint: "@tracht-digital-solutions/tds-ext-projects/pages/AdminIndex.astro",
+      entrypoint: "@tracht-digital-labs/tds-ext-projects/pages/AdminIndex.astro",
       permission: "projects:manage",
     },
   ],

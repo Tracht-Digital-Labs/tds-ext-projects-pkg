@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { Alert, Spinner, StatusChip } from "@tracht-digital-solutions/tds-shared/components";
-import { formatDate } from "@tracht-digital-solutions/tds-shared/format";
+import { Alert, Spinner, StatusChip } from "@tracht-digital-labs/tds-shared/components";
+import { formatDate } from "@tracht-digital-labs/tds-shared/format";
 import { MILESTONE_STATUS, PROJECT_STATUS } from "./statuses";
-import { apiFetch } from "@tracht-digital-solutions/tds-shared/api";
+import { apiFetch } from "@tracht-digital-labs/tds-shared/api";
 import {
   AnimatedItem,
   AnimatedList,
   Collapse,
-} from "@tracht-digital-solutions/tds-shared/motion/react";
+} from "@tracht-digital-labs/tds-shared/motion/react";
 
 interface Project {
   id: number;
